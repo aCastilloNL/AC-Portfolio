@@ -1,0 +1,14 @@
+export {default as cV } from "./cvIconx.png";
+export {default as eMail } from "./emIcon.png";
+export {default as gitHub } from "./ghLogo.png";
+export {default as home } from "./homeLogo.png";
+export {default as ilha } from "./ilha.gif";
+export {default as laNurserie } from "./laNurserie.gif";
+export {default as pickaChew } from "./pikachew.gif";
+export {default as meIcon } from "./meIcon.png";
+export {default as meHeadshot } from "./mePro.png";
+export {default as projects } from "./projIcon3.png";
+export {default as soundOn} from "./sound-on.png";
+export {default as soundOff} from "./mute.png";
+export {default as spinner} from "./spinner.gif";
+export {default as tick} from "./tick.png";
