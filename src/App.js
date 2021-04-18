@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { AboutPg, ProjectsPg, ContactPg, HomePg } from "./pg";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { Header, MenuButton } from "./components";
+import { MenuProvider } from "./context/MenuContext";
+import ParticlesBG from "./utils/particles";
+import "./styles/App.scss";
 
-function App() {
+const App = () => {
+  let location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ position: "relative" }}>
+      <ParticlesBG />
+      <MenuProvider>
+        <Header />
+        <MenuButton />
+          <TransitionGroup>
+            <CSSTransition key={location.key} classNames="fade" timeout={450}>
+              <Switch location={location}>
+                <Route exact path="/">
+                  <HomePg />
+                </Route>
+                <Route path="/about">
+                  <AboutPg />
+                </Route>
+                <Route path="/projects">
+                  <ProjectsPg />
+                </Route>
+                <Route path="/contact">
+                  <ContactPg />
+                </Route>
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+      </MenuProvider>
     </div>
   );
-}
+};
 
 export default App;

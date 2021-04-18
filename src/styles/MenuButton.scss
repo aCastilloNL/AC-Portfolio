@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+.menuButton {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0 0 1vh 1.5vw;
+  position: fixed;
+  bottom: 0;
+  border-radius: 50%;
+  font-family: Maven Pro;
+  font-size: .75rem;
+  color: rgb(255, 32, 32);
+  z-index: 2;
+  width: calc(2.5em + 6.5vw);
+  height: calc(2.5em + 6.5vw);
+  min-width: 4.5em;
+  min-height: 4.5em;
+  max-width: 7.7em;
+  max-height: 7.7em;
+}
+#menTxt {
+  font-size: clamp(0.7rem, 2.75vw, 1.3rem);
+}
+.metal {
+  text-align: center;
+  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  
+  background-color: rgb(125, 125, 125);
+  box-shadow: inset hsla(0,0%,15%, 1) 0  0px 0px 1px,
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px,
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px,
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px,
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px,
+    rgba(174, 174, 174, 0.5) 0  5px 6px 4px; 
+  
+  transition: color .2s;
+}
+.radial.metal {
+  background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%)
+}
+
+.metal.radial:before, .metal.radial:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+  border-radius: inherit;
+  background-image: -webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.metal.radial:before { transform: rotate( 65deg); }
+.metal.radial:after { transform: rotate(-65deg); }
+
+.menuButton:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 14px #ff0101);
+}
+.menuButton:active {
+  border-width: thick;
+}
+.menuButton:focus {
+  box-shadow: 0 0 0 2px #4f4f4f, 0 0 3px 5px rgba(255, 0, 0, 0.598),
+    inset hsla(0,0%,15%, 1) 0  0px 0px 1px,
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px,
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px,
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px,
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, 
+    rgba(174, 174, 174, 0.5) 0  5px 6px 4px;
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}

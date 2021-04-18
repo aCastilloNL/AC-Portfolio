@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&display=swap");
+.contactPg {
+    height: 89vh;
+    overflow: auto;
+    font-family: Blinker;
+}
+#contactTtl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(4vh + 4vw);
+}
+form {
+    text-align: center;
+    font-size: 2.5vmax;
+    position: relative;
+    padding-bottom: 2vw;
+}
+fieldset {
+    border: none;
+}
+label {
+    display: block;
+    margin: 17px 2px 3px 23vw;
+    text-align: left;
+}
+input, textarea {
+    background-color: transparent;
+    border: 2px solid rgb(77, 77, 77);
+    border-left: 4px double transparent;
+    border-right: 4px double transparent;
+    border-top: 4px double transparent;
+    width: 50vw;
+    height: 3vh;
+    color: white;
+    font-size: 1.9vmax;
+    font-family: Blinker;
+}
+textarea {
+    transition: height 1.5s linear 50s, width 1.5s linear 50s;
+}
+textarea:focus {
+    height: 30vh;
+    width: 60vw;
+    transition: height 1.5s linear, width 1.5s linear;
+    border: 4px double black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px 2px #ffffff, 0px 9px 10px 6px rgb(34 255 0 / 60%);
+    outline: 2px dotted transparent;
+    outline-offset: 2px;
+}
+input:focus {
+    border: 4px double black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px 2px #ffffff, 0px 9px 10px 6px rgb(34 255 0 / 60%);
+    outline: 2px dotted transparent;
+    outline-offset: 2px;
+}
+input::placeholder, textarea::placeholder {
+    color: rgba(0, 0, 0, 0.392);
+    font-size: 2.5vmin;
+}
+#formButton {
+    border: 3px solid rgb(77, 77, 77);
+    border-radius: 2rem;
+    background: transparent;
+    margin-top: 10px;
+    padding: 0 0 0 .4rem;
+    width: 8em;
+    height: 2.5em;
+    font-size: 2vmax;
+    color: ghostwhite;
+    letter-spacing: 4px;
+}
+#formButton:hover {
+    cursor: pointer;
+    color: rgba(34, 255, 0, 0.598);
+    background-color: rgba(0, 0, 0, 0.084);
+    filter:drop-shadow(2px 4px 3px dimgray);
+}
+#formButton:focus {
+    outline: 2px dotted transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 2px 3px rgba(34, 255, 0, 0.598);
+    outline: 2px dotted transparent;
+    outline-offset: 2px;
+}
+.spin {
+    width: 25%;
+    margin: 0;
+    padding: 2px 3px 0 0;
+}
+
+@media screen and (max-width: 280px) {
+    .contactPg {
+        height: 84vh;
+        overflow: auto;
+        font-family: Blinker;
+    }
+}

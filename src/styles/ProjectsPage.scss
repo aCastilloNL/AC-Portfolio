@@ -1,0 +1,85 @@
+main {
+  text-align: center;
+}
+#projMain {
+  width: 100vw;
+  height: -webkit-fill-available;
+  margin: 0 auto;
+  font-size: 2.2vmax;
+  contain: content;
+}
+
+.page.full {
+  overflow: auto;
+  height: auto;
+  transition: all 350ms linear 0s;
+  max-height: 97.2vh;
+  max-width: 100vw;
+}
+.page.trans {
+  overflow: auto;
+  max-height: 86vh;
+  max-width: 80vw;
+  transition: all 350ms linear;
+}
+
+#pageDesc {
+  margin: 1rem 15px 1rem 15px;
+}
+#idSect {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+#pickachewFig {
+  flex-basis: 35vmax;
+}
+#laNurserieFig {
+  flex-basis: 45vmax;
+}
+figure {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 1rem 0 calc(3vh + 3vw) 0;
+}
+#viewTech {
+  width: fit-content;
+  margin: 0 auto;
+}
+figure img {
+  box-sizing: border-box;
+  border-radius: 7vw;
+  width: 94%;
+  padding: calc(1vh + 1vw);
+}
+.techStackCont {
+  text-align: initial;
+  display: inline-block;
+  margin: 1vh 0 0 0;
+}
+.techLiBllt {
+  margin: calc(.6vh + .6vw) 0;
+}
+.techTypTtlCont {
+  margin-bottom: calc(.7vh + .7vw);
+  padding: 0;
+}
+summary {
+  width: fit-content;
+}
+summary:hover {
+  cursor: pointer;
+  color: rgba(34, 255, 0, 0.598);
+  filter:drop-shadow(-2px 4px 2px black);
+}
+summary:focus {
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #ffffff, 0 0 2px 3px rgba(34, 255, 0, 0.598);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&display=swap");
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin:0;
+    background: linear-gradient(-45deg, #C4E5F2, #7B9AA6, #a0bac6, #00638e, #0094fd);
+    background-size: 400% 210%;
+    color: ghostwhite;
+    animation: gradient 15s ease infinite;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+} 
+#root {
+    height: 100%;
+    width: 100%;
+}
+.App {
+    height: 100%;
+    width: 100%;
+}
+.page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-family: Blinker;
+}
+
+.pageTitle {
+    padding: calc(1 * (1vh + 1vw));
+    text-align: center;
+}
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

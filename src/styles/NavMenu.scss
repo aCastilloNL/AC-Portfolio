@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Maven+Pro:wght@500&display=swap");
+nav ul li {
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+}
+nav ul li:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 217, 0.961);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}
+nav ul li img {
+  filter: invert(66%) drop-shadow(2px 1px 3px black);
+  animation: metallic 4s ease-in-out infinite;
+}
+#rowNav {
+  margin: 0 0 1vh 1.5vw;
+  padding-left: 16vw;
+  position: fixed;
+  bottom: 0;
+  width: 83vw;
+  display: flex;
+  z-index: 1;
+}
+#rowNav li {
+  list-style-type: none;
+  margin: auto;
+  position: relative;
+  animation: pulse 3s linear infinite;
+}
+#rowNav li img {
+  display: flex;
+  width: calc(2em + 6vw);
+}
+#navMenButt {
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: Maven Pro;
+  font-size: 0.75rem;
+  color: rgb(34, 255, 0);
+  margin: 0 0 1vh 1.5vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  text-shadow: hsla(0, 0%, 40%, 0.5) 0 -1px 0, hsla(0, 0%, 100%, 0.6) 0 2px;
+  background-color: rgb(125, 125, 125);
+  box-shadow: inset hsla(0, 0%, 15%, 1) 0 0px 0px 1px,
+    inset hsla(0, 0%, 15%, 0.8) 0 -1px 5px 4px,
+    inset hsla(0, 0%, 0%, 0.25) 0 -1px 0px 7px,
+    inset hsla(0, 0%, 100%, 0.7) 0 2px 1px 7px,
+    sla(0, 0%, 0%, 0.15) 0 -5px 6px 4px, rgba(174, 174, 174, 0.5) 0 5px 6px 4px;
+  transition: color 0.2s;
+  width: calc(2.5em + 6.5vw);
+  height: calc(2.5em + 6.5vw);
+  min-width: 4.5em;
+  min-height: 4.5em;
+  max-width: 7.7em;
+  max-height: 7.7em;
+  background-image: -webkit-radial-gradient(
+      50% 0%,
+      8% 50%,
+      hsla(0, 0%, 100%, 0.5) 0%,
+      hsla(0, 0%, 100%, 0) 100%
+    ),
+    -webkit-radial-gradient(50% 100%, 12% 50%, hsla(0, 0%, 100%, 0.6) 0%, hsla(
+            0,
+            0%,
+            100%,
+            0
+          )
+          100%),
+    -webkit-radial-gradient(0% 50%, 50% 7%, hsla(0, 0%, 100%, 0.5) 0%, hsla(
+            0,
+            0%,
+            100%,
+            0
+          )
+          100%),
+    -webkit-radial-gradient(100% 50%, 50% 5%, hsla(0, 0%, 100%, 0.5) 0%, hsla(
+            0,
+            0%,
+            100%,
+            0
+          )
+          100%),
+    -webkit-repeating-radial-gradient(50% 50%, 100% 100%, hsla(0, 0%, 0%, 0) 0%, hsla(
+            0,
+            0%,
+            0%,
+            0
+          )
+          3%, hsla(0, 0%, 0%, 0.1) 3.5%),
+    -webkit-repeating-radial-gradient(50% 50%, 100% 100%, hsla(0, 0%, 100%, 0)
+          0%, hsla(0, 0%, 100%, 0) 6%, hsla(0, 0%, 100%, 0.1) 7.5%),
+    -webkit-repeating-radial-gradient(50% 50%, 100% 100%, hsla(0, 0%, 100%, 0)
+          0%, hsla(0, 0%, 100%, 0) 1.2%, hsla(0, 0%, 100%, 0.2) 2.2%);
+}
+#navMenButt:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 14px lime);
+}
+#navMenButt:active {
+  border-width: thick;
+}
+#navMenButt:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(34, 255, 0, 0.598),
+    inset hsla(0, 0%, 15%, 1) 0 0px 0px 1px,
+    inset hsla(0, 0%, 15%, 0.8) 0 -1px 5px 4px,
+    inset hsla(0, 0%, 0%, 0.25) 0 -1px 0px 7px,
+    inset hsla(0, 0%, 100%, 0.7) 0 2px 1px 7px,
+    hsla(0, 0%, 0%, 0.15) 0 -5px 6px 4px, rgba(174, 174, 174, 0.5) 0 5px 6px 4px;
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}
+#columnNav {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 1vw;
+  padding: 0;
+  position: fixed;
+  bottom: 6.6vmax;
+  z-index: 1;
+  height: 45vh;
+  justify-content: space-around;
+}
+#columnNav li {
+  list-style-type: none;
+  position: relative;
+  animation: pulse 3s linear -1s infinite;
+}
+#columnNav li img {
+  display: flex;
+  width: calc(2em + 6vw);
+}
+#projIcon {
+  margin: 0 3px;
+}
+#projIcon img {
+  margin: 2px -2px -3px -4px;
+}
+#cvImg {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 100%;
+  height: calc(2em + 6vw);
+}
+.navMenu {
+  transition: opacity 3s ease-in-out;
+}
+.navMenu.show {
+  animation: fadeIn 500ms;
+  opacity: 1;
+}
+.navMenu.close {
+  animation: fadeOut 500ms;
+  opacity: 0;
+}
+
+//////////////Media Queries
+@media only screen and (max-height: 281px) and (max-width: 653px) {
+  .highCon,
+  #cvli {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 404px) and (max-width: 719px) and (min-height: 568px) and (max-height: 647px) and (-webkit-min-device-pixel-ratio: 1),
+  (min-width: 497px) and (max-width: 719px) and (min-height: 648px) {
+  #columnNav {
+    height: 65%;
+  }
+}
+@media screen and (max-width: 736px) and (min-height: 512px) and (max-height: 567px) and (-webkit-min-device-pixel-ratio: 1) {
+  #columnNav {
+    bottom: calc(6vh + 6vw);
+    height: 65%;
+  }
+}
+@media screen and (min-width: 585px) and (max-width: 1021px) and (min-height: 667px) and (max-height: 1023) and (-webkit-min-device-pixel-ratio: 1) {
+  #columnNav {
+    bottom: 8vmax;
+    height: 65%;
+  }
+}
+@media (min-width: 720px) and (min-height: 540px) and (max-height: 919px) {
+  #columnNav {
+    bottom: 10vmax;
+    height: 67%;
+  }
+}
+@media screen and (max-width: 736px) and (max-height: 511px),
+  (min-width: 737px) and (max-width: 823px) and (min-height: 375px) and (max-height: 411px) {
+  .menuButton {
+    width: calc(1.5 * (4vw + 3vh));
+    height: calc(1.5 * (4vw + 3vh));
+  }
+  #columnNav {
+    margin: 0 0 1vh 0;
+    height: 62vh;
+    bottom: calc(3 * (2vh + 2vw));
+  }
+  #columnNav li {
+    margin-left: 2vw;
+  }
+  #columnNav li img {
+    width: calc(1.5em + 4vw);
+  }
+  #navMenButt {
+    width: calc(1.5 * (4vw + 3vh));
+    height: calc(1.5 * (4vw + 3vh));
+  }
+  #menTxt {
+    font-size: clamp(0.7rem, 1.8vw, 1.3em);
+  }
+  #cvImg {
+    height: calc(1.3em + 4vw);
+  }
+  #rowNav {
+    bottom: calc(3 * (2vh + 2vw));
+    right: 1vw;
+    flex-direction: column;
+    justify-content: space-around;
+    width: fit-content;
+    height: 62vh;
+    padding: 0;
+  }
+  #rowNav li img {
+    width: calc(1.5em + 4vw);
+  }
+}
+@media screen and (min-width: 737px) and (max-width: 1023px) and (max-height: 374px),
+  (min-width: 737px) and (min-height: 412px) and (max-height: 767px),
+  (min-width: 824px) and (max-width: 1023px) and (min-height: 375px) and (max-height: 767px) {
+  .menuButton {
+    width: calc(1.5 * (4vw + 3vh));
+    height: calc(1.5 * (4vw + 3vh));
+  }
+  #columnNav {
+    margin: 0 0 1vh 0;
+    height: 62vh;
+    bottom: calc(3 * (2vh + 2vw));
+  }
+  #columnNav li {
+    margin-left: 2vw;
+  }
+  #columnNav li img {
+    width: calc(1.5em + 4vw);
+  }
+  #navMenButt {
+    width: calc(1.5 * (4vw + 3vh));
+    height: calc(1.5 * (4vw + 3vh));
+  }
+  #menTxt {
+    font-size: clamp(0.7rem, 1.7vw, 1.3em);
+  }
+  #cvImg {
+    height: calc(1.3em + 4vw);
+  }
+  #rowNav {
+    bottom: 1vh;
+  }
+  #rowNav li img {
+    width: calc(1.5em + 4vw);
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #columnNav {
+    height: 65%;
+  }
+}
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+  (min-width: 720px) and (min-height: 920px) and (max-height: 1023px) {
+  #columnNav {
+    height: 65%;
+    bottom: 10vmax;
+  }
+}
+@media screen and (min-width: 1035px) and (-webkit-min-device-pixel-ratio: 1) {
+  #columnNav {
+    top: 17%;
+    height: 67%;
+  }
+}
+@media screen and (min-width: 1140px) and (min-width: 1999px) {
+  #columnNav {
+    bottom: 13vh;
+    height: calc(12 * (2vh + 2vw));
+  }
+}
+@media screen and (min-width: 2000px) {
+  #columnNav {
+    bottom: 4vmax;
+    height: 70vh;
+  }
+}
+
+/////////////////Key Frames
+@keyframes pulse {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 5px;
+  }
+  75% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes metallic {
+  50% {
+    -webkit-filter: invert(100%) drop-shadow(2px 1px 3px lime);
+    filter: invert(100%) drop-shadow(2px 1px 3px lime);
+  }
+}

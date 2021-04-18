@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
+h1 {
+    margin: 0;
+    font-size: 3.5vmax;
+}
+h2 {
+    margin: 0 auto;
+    font-size: 3vmax;
+}
+#introStackContainer {
+    width: 95vw;
+    margin: 0 auto;
+}
+.introStack{
+    font-size: 2.3vmax;
+}
+#introBox {
+    height: calc(60vh + 10vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
