@@ -16,25 +16,18 @@ export const AboutPg = () => {
 
         <main id="aboutMain" className={`${showNav ? "trans" : "full"}`}>
           <p style={{ marginTop: "0" }}>
-            I'm currently based in The Hague, Netherlands. Originally I'm from
-            So'California. I've recently switched careers from Legal Videography
-            to Full Stack Development.
+          I'm a Southern California transplant now living in The Hague, Netherlands.  I am always searching for my next opportunity and challenge.
           </p>
 
           <p>
-            I started learning Java in June 2020. In August I stopped and began
-            the Front End Masters bootcamp. Afterwards, I attended the Wild Code
-            School in Oct of the same year for professional training. Then I
-            made the big switch from Java to JavaScript. This portfolio reflects
-            the skills I've learned thus far, showcasing projects from my
-            schooling, clients and personal.
+          After completing an introduction to Java, I completed the Front End Masters bootcamp.  I then enrolled and completed a six-month course at the Wild Code School for further professional training. This portfolio reflects the skills I've learned thus far, showcasing projects I completed in my schooling and for clients.
           </p>
 
           <p id={showNav ? "endP" : "endPTrue"}>
-            In my leisure time (although rare :p) I enjoy watching movies. I'm a
-            huge Sci-Fi and Horror fan. I watch some Anime, too. I also love to
-            travel and eat! Message me for any questions, comments or inquiries,
-            or simply to say hello.
+            In my leisure time (although rare) I enjoy watching movies. I'm a
+            huge Sci-Fi and Horror fan. I also love to
+            travel and eat, of course. As mentioned earlier, feel free to message me for any questions, comments or inquiries,
+            or even to simply say hello.
           </p>
         </main>
       </main>
