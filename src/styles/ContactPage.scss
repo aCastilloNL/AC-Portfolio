@@ -45,14 +45,14 @@ textarea:focus {
     transition: height 1.5s linear, width 1.5s linear;
     border: 4px double black;
     border-radius: 5px;
-    box-shadow: 0px 4px 15px 2px #ffffff, 0px 9px 10px 6px rgb(34 255 0 / 60%);
+    box-shadow: 0px 4px 15px 2px #ffffff, 0px 9px 10px 6px hsl(189deg 100% 50%);
     outline: 2px dotted transparent;
     outline-offset: 2px;
 }
 input:focus {
     border: 4px double black;
     border-radius: 5px;
-    box-shadow: 0px 4px 15px 2px #ffffff, 0px 9px 10px 6px rgb(34 255 0 / 60%);
+    box-shadow: 0px 4px 15px 2px #ffffff, 0px 9px 10px 6px hsl(189deg 100% 50%);
     outline: 2px dotted transparent;
     outline-offset: 2px;
 }
@@ -74,14 +74,14 @@ input::placeholder, textarea::placeholder {
 }
 #formButton:hover {
     cursor: pointer;
-    color: rgba(34, 255, 0, 0.598);
+    color: #00d9ff;
     background-color: rgba(0, 0, 0, 0.084);
     filter:drop-shadow(2px 4px 3px dimgray);
 }
 #formButton:focus {
     outline: 2px dotted transparent;
     outline-offset: 2px;
-    box-shadow: 0 0 0 1px #ffffff, 0 0 2px 3px rgba(34, 255, 0, 0.598);
+    box-shadow: 0 0 0 1px #ffffff, 0 0 2px 3px rgba(0, 255, 217, 0.961);
     outline: 2px dotted transparent;
     outline-offset: 2px;
 }

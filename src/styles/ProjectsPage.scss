@@ -72,14 +72,14 @@ summary {
 }
 summary:hover {
   cursor: pointer;
-  color: rgba(34, 255, 0, 0.598);
-  filter:drop-shadow(-2px 4px 2px black);
+  color: #00d9ff;
+  filter:drop-shadow(-2px 4px 2px rgba(0, 0, 0, 0.55));
 }
 summary:focus {
   outline: 2px dotted transparent;
   outline-offset: 2px;
   border-radius: 5px;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 2px 3px rgba(34, 255, 0, 0.598);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 2px 3px rgba(0, 255, 217, 0.961);
   outline: 2px dotted transparent;
   outline-offset: 2px;
 }
