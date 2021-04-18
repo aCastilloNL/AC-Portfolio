@@ -19,19 +19,24 @@ export const Intro = () => {
           <Pause ms={1200} />
           <Pace getPace={(char) => (char === "" ? 300 : 30)}>
             <section id="introStackContainer">
-              <span className="introStack" style={{ display: "block" }}>
+              <span className="introStack">
                 {
-                  "I'm a Full-Stack Developer with a penchant for learning and creativity."
+                  "I am a Full-Stack Developer with a penchant for learning and creativity."
                 }
               </span>
               <Pause ms={1200} />
-              <span className="introStack" style={{ display: "block" }}>
+              <span className="introStack">
                 {" The Menu below contains the keys for exploration."}
               </span>
               <Pause ms={1200} />
               <span className="introStack">
                 {
                   " Enjoy your stay and please reach out to me for absolutely anything."
+                }
+              </span>
+              <span className="introStack">
+                {
+                  " Thanks for stopping by!"
                 }
               </span>
             </section>
