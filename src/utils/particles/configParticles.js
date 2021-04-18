@@ -8,10 +8,10 @@ const particlesConfig = {
           }
         },
         "shape": {
-          "type": "circle",
+          "type": "polygon",
           "stroke": {
-            "width": 0.1,
-            "color": "#201a4d"
+            "width": 0.9,
+            "color": "#330066"
           },
         },
         "opacity": {
@@ -19,7 +19,7 @@ const particlesConfig = {
           "random": false,
           "anim": {
             "enable": true,
-            "speed": 0.5,
+            "speed": 0.4,
             "opacity_min": 0.1,
             "sync": false
           }
@@ -29,8 +29,8 @@ const particlesConfig = {
           "random": true,
           "anim": {
             "enable": true,
-            "speed": 0,
-            "size_min": 11.053621458328248,
+            "speed": 2,
+            "size_min": 6.053621458328248,
             "sync": true
           }
         },
@@ -38,7 +38,7 @@ const particlesConfig = {
           "enable": true,
           "distance": 150,
           "color": "#ffffff",
-          "opacity": 0.4,
+          "opacity": 0.3,
           "width": 1
         },
         "move": {
@@ -50,7 +50,7 @@ const particlesConfig = {
           "out_mode": "out",
           "bounce": false,
           "attract": {
-            "enable": false,
+            "enable": true,
             "rotateX": 600,
             "rotateY": 1200
           }
@@ -60,11 +60,11 @@ const particlesConfig = {
         "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": true,
+            "enable": false,
             "mode": "repulse"
           },
           "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "push"
           },
           "resize": true
@@ -78,7 +78,7 @@ const particlesConfig = {
           },
           "bubble": {
             "distance": 400,
-            "size": 40,
+            "size": 20,
             "duration": 2,
             "opacity": 0.5440917322419012,
             "speed": 3
