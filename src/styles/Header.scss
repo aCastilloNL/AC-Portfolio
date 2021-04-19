@@ -28,6 +28,7 @@ header {
 }
 #soundBtn {
   border: none;
+  border-radius: 50%;
   margin: 0 5vw 0 0;
   padding: 0;
   background: transparent;
@@ -41,7 +42,7 @@ header {
 }
 .soundBtnOff:focus {
     border-radius: 50%;
-    box-shadow: 0 0 0 2px #575757, 0 0 3px 5px #ff2020;
+    box-shadow: 0 0 0 2px #575757, 0 0 3px 5px #ffd739;
     outline: 2px dotted transparent;
     outline-offset: 2px;
   }
