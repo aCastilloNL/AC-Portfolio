@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="App" style={{ position: "relative" }}>
-      {/* <ParticlesBG /> */}
+      <ParticlesBG />
       <MenuProvider>
         <Header />
         <MenuButton />

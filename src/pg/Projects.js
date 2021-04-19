@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ProjectsPage.scss";
+import "../styles/Projects.scss";
 import { lnkSound } from "../assets/aud";
 import { exp } from "../utils/projectData";
 import { useSound } from "../context/SoundContext";

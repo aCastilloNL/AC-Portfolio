@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/AboutMe.scss";
+import "../styles/About.scss";
 import { meHeadshot } from "../assets/img";
 import { useMenu } from "../context/MenuContext";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import "../styles/ContactPage.scss";
+import "../styles/Contact.scss";
 import { spinner, tick } from "../assets/img";
 
 export const ContactPg = () => {
