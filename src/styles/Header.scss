@@ -26,7 +26,7 @@ header {
   letter-spacing: 1px;
   display: inline;
 }
-#soundButt {
+#soundBtn {
   border: none;
   margin: 0 5vw 0 0;
   padding: 0;
@@ -35,7 +35,7 @@ header {
 }
 .soundBtnOn:focus {
   border-radius: 50%;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 217, 0.961);
+  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 94, 0.961);
   outline: 2px dotted transparent;
   outline-offset: 2px;
 }
@@ -45,8 +45,12 @@ header {
     outline: 2px dotted transparent;
     outline-offset: 2px;
   }
-#soundButtImg {
+#soundBtnImg {
   width: calc(3vw + 3vh);
+}
+.muteBtnImg {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 217, 0.961);
 }
 .soundOn:hover {
   cursor: pointer;
