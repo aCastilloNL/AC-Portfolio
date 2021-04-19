@@ -15,11 +15,14 @@ export const Header = () => {
         <h2 id="headerTitle">Alfred Castillo </h2>
         <p id="copyrightTxt">© 2021</p>
       </span>
-      <button id="soundBtn" onClick={toggleSound} className={sound ? "soundBtnOn" : "soundBtnOff"}>
+      <button 
+      id="soundBtn" 
+      onClick={toggleSound}
+      className={sound ? "soundBtnOn" : "soundBtnOff"}>
         <img
           id="soundBtnImg"
           src={sound ? soundOn : soundOff}
-          className={`muteBtnImg ${sound ? "soundOn" : "soundOff"}`}
+          className={sound ? "soundOn" : "soundOff"}
           onClick={() => !sound && linkSound.play()}
           alt="Mute Button"
         />

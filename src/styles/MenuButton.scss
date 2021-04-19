@@ -38,6 +38,8 @@
     hsla(0, 0%, 0%, 0.15) 0 -5px 6px 4px, rgba(174, 174, 174, 0.5) 0 5px 6px 4px;
 
   transition: color 0.2s;
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
 }
 .radial.metal {
   -webkit-border-radius: 50%;
@@ -125,6 +127,9 @@
             0
           )
           100%);
+
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
 }
 .metal.radial:before {
   transform: rotate(65deg);
@@ -132,6 +137,9 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   -khtml-border-radius: 50%;
+
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
 }
 .metal.radial:after {
   transform: rotate(-65deg);
@@ -139,6 +147,9 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   -khtml-border-radius: 50%;
+
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
 }
 
 .menuButton:hover {

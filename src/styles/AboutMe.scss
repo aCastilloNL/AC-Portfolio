@@ -16,9 +16,22 @@
   margin: 2vh 1rem 1rem;
   contain: content;
 }
+.meContainer {
+  width: inherit;
+  height: inherit;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border: .1px solid ghostwhite;
+}
 #Me img {
   width: 16vmax;
   margin-left: 1vh;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
 }
 .full {
   overflow: auto;

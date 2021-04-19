@@ -34,6 +34,12 @@ header {
   background: transparent;
   display: inherit;
 }
+.soundBtn {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 217, 0.961);
+}
+.soundBtnOff {
+  box-shadow: 0 0 0 2px #821515, 0 0 3px 5px rgba(252, 41, 41, 0.961);
+}
 .soundBtnOn:focus {
   border-radius: 50%;
   box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 94, 0.961);
@@ -48,10 +54,6 @@ header {
   }
 #soundBtnImg {
   width: calc(3vw + 3vh);
-}
-.muteBtnImg {
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px rgba(0, 255, 217, 0.961);
 }
 .soundOn:hover {
   cursor: pointer;

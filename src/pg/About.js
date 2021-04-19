@@ -11,7 +11,9 @@ export const AboutPg = () => {
       <h2 className="pageTitle">Who I Am</h2>
       <main id="mainMain">
         <aside id="Me">
-          <img src={meHeadshot} alt="Alfred Headshot" />
+          <div className="meContainer">
+            <img src={meHeadshot} alt="Alfred Headshot" />
+          </div>
         </aside>
 
         <main id="aboutMain" className={`${showNav ? "trans" : "full"}`}>
