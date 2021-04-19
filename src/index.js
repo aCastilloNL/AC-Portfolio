@@ -3,7 +3,6 @@ import {SoundProvider} from "./context/SoundContext";
 import { BrowserRouter as Router } from "react-router-dom";
 import ReactDOM from "react-dom";
 import App from "./App";
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <SoundProvider>
@@ -13,5 +12,3 @@ ReactDOM.render(
   </SoundProvider>,
   document.getElementById('root')
 );
-
-reportWebVitals();
