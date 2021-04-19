@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
 .menuButton {
-  border: 1px solid rgb(0, 0, 0);
+  border: 3px double #3a3939;
   margin: 0 0 1vh 1.5vw;
   position: fixed;
   bottom: 0;
@@ -21,7 +21,7 @@
 }
 .metal {
   border-radius: 50%;
-  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  text-shadow: hsla(0,0%,40%,.5) -1px -2px 0, hsla(0,0%,100%,.6) 0 1px 0;
   background-color: rgb(125, 125, 125);
   box-shadow: inset hsla(0,0%,15%, 1) 0  0px 0px 1px,
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px,

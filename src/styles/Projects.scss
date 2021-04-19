@@ -83,3 +83,14 @@ summary:focus {
   outline: 2px dotted transparent;
   outline-offset: 2px;
 }
+
+summary::marker {
+  color: #00ffe5;
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
