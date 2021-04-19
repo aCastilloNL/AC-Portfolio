@@ -34,6 +34,7 @@ export const Intro = () => {
                   " Enjoy your stay and please reach out to me for absolutely anything."
                 }
               </span>
+              <Pause ms={1000} />
               <span className="introStack">
                 {
                   " Thanks for stopping by!"
