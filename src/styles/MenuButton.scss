@@ -27,6 +27,7 @@
   text-align: center;
   text-shadow: hsla(0, 0%, 40%, 0.5) 0 -1px 0, hsla(0, 0%, 100%, 0.6) 0 2px 1px;
   background-color: rgb(125, 125, 125);
+  border: .1px solid gray;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -42,6 +43,7 @@
   -webkit-clip-path: circle(50% at 50% 50%);
 }
 .radial.metal {
+  border: .1px solid gray;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -96,6 +98,7 @@
   height: inherit;
   max-width: inherit;
   max-height: inherit;
+  border: .1px solid gray;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -132,6 +135,7 @@
   -webkit-clip-path: circle(50% at 50% 50%);
 }
 .metal.radial:before {
+  border: .1px solid gray;
   transform: rotate(65deg);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -143,6 +147,7 @@
 }
 .metal.radial:after {
   transform: rotate(-65deg);
+  border: .1px solid gray;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
