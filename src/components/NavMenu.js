@@ -76,7 +76,11 @@ export const NavMenu = (props) => {
         <li id="me">
           <Link
             to="/about"
-            onClick={() => (sound ? linkSound.play() : linkSound.pause())}
+            onClick={() => {
+              sound ? linkSound.play() : linkSound.pause();
+              setFade();
+              setTimeout(() => props.onClick(), 500);
+            }}
           >
             <img src={meIcon} alt="About Me Link" />
           </Link>
@@ -84,7 +88,11 @@ export const NavMenu = (props) => {
         <li>
           <Link
             to="/contact"
-            onClick={() => (sound ? linkSound.play() : linkSound.pause())}
+            onClick={() => {
+              sound ? linkSound.play() : linkSound.pause();
+              setFade();
+              setTimeout(() => props.onClick(), 500);
+            }}
           >
             <img src={eMail} alt="Contact Link" />
           </Link>
