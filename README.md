@@ -1,9 +1,8 @@
-# Alfred Castillo's Web Development Portfolio
+# Alfred Castillo's Web Dev Portfolio
 
-This portfolio was created in March over a span of one month.
+Developed in March over a span of one month with the following technologies and packages:
 
-It was developed with the following technologies:
-- Javascript, including Object Oriented Programming
+- Javascript with a focus on Object Oriented Programming
 - React
 - Context
 - Hooks
