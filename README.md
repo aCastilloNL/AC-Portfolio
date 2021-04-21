@@ -1,13 +1,13 @@
-# Alfred Castillo's Web Dev Portfolio
+# Alfred Castillo's Web Developer Portfolio
 
-Developed in March over a span of one month with the following technologies and packages:
+Created in March over a one-month span with the following technologies and packages:
 
 - Javascript with a focus on Object Oriented Programming
 - React
 - Context
 - Hooks
 - React Router DOM
-- SCSS / Sass
+- (S)CSS
 - CSS3 Animations
 - React-Transition-Group
 - Media Queries
