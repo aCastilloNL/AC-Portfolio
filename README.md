@@ -1,4 +1,4 @@
-# Alfred Castillo's Full Stack Developer Portfolio
+# Alfred Castillo's Web Developer Portfolio
 
 Created in March over a one-month span with the following technologies and packages:
 
@@ -7,7 +7,7 @@ Created in March over a one-month span with the following technologies and packa
 - Context
 - Hooks
 - React Router DOM
-- (S)CSS
+- Sass
 - CSS3 Animations
 - React-Transition-Group
 - Media Queries
